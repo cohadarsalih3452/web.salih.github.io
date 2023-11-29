@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("images/arkaplan.jpg");
+    background-size: cover;
+}
+
+a{
+    color: white;
+}
+
+.container{
+    width: 80% ;
+    margin: auto;
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+/* header start */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease;
+}
+
+nav ul li a:hover{
+    color: #0ba2c0;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .menu-button {
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+
+nav .menu .menu-button:hover {
+    background-color: #0ba2c0;
+    color: white;
+
+}
+/* header end */
+
+
+/* section start */
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+
+
+
+.content h1{
+    font-size:60px;
+    text-align: center;
+}
+
+.content p{
+    font-size:24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .links a {
+   
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+    
+}
+
+
+.content .links a:hover {
+   background-color: #0ba2c0;
+   color: white;
+}
+
+/* section end */
+
+.menu .menu-button {
+        display: none;
+    }
+    
+    .content{
+        padding-top: 50px;
+    }
+
+    .content h1{
+        padding-top: 36px;
+    }
+
+    .content h2{
+        
+        padding-top: 20px;
+        font-size: 23px; 
+        text-align: center;
+    }
+
+    .content p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .content .links{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+
+    @media screen and (max-width: 700px) {
+    }
+
+    section {
+        padding: 1px;
+        
+    }
+    
+    .container {
+        width: 80%;
+        float:none
+    }
+
+    img {
+        max-width: 100%;
+        
+    }
+   
+
+    .content .links a{
+        padding: 14px;
+        width: 90%;
+    }
+
+    div image {
+        float: left;
+    }
+
+    
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea,
+    #contact button[type="submit"] {
+        font: 500 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+    }
+
+    #contact {
+        background: #F9F9F9;
+        padding: 25px;
+        margin: 100px 0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    #contact h2 {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .form-control{
+        border: none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    #contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.4s ease-in-out;
+    -moz-transition: border-color 0.4s ease-in-out;
+    transition: border-color 0.4s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(107, 123, 179);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+#contact button[type="submit"]:hover {
+    background: #364aff;
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* Stil değişiklikleri buraya eklenecek */
+  }
